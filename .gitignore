@@ -10,3 +10,7 @@ __pycache__
 *~
 .*~
 baby-python
+addthem.c
+addthem.o
+libaddthem*.so
+million_integers.int32
