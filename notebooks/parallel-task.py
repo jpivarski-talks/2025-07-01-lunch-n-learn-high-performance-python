@@ -5,7 +5,7 @@ import sys
 import numpy as np
 
 NUM_THREADS = int(sys.argv[1])
-DATASET_SIZE = 1_000_000
+DATASET_SIZE = 5_000_000
 
 a_list = np.random.uniform(5, 10, DATASET_SIZE).tolist()
 b_list = np.random.uniform(10, 20, DATASET_SIZE).tolist()
