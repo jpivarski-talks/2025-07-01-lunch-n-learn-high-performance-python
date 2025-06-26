@@ -5,7 +5,7 @@ import sys
 import numpy as np
 
 NUM_THREADS = int(sys.argv[1])
-DATASET_SIZE = 5_000_000
+DATASET_SIZE = 1_000_000
 
 a_list = np.random.uniform(5, 10, DATASET_SIZE).tolist()
 b_list = np.random.uniform(10, 20, DATASET_SIZE).tolist()
@@ -43,6 +43,6 @@ for thread in threads:
 for thread in threads:
     thread.join()
 
-print(f"{NUM_THREADS} worker finished in {time.time() - start_time:.1f} seconds")
+print(f"{NUM_THREADS} worker(s) finished in {time.time() - start_time:.1f} seconds")
 
 assert all(x is not None for x in output), "some items were not computed"

@@ -1,11 +1,6 @@
 FROM python:3.12-slim
 
-# Install Python 3.12 packages
-RUN pip install --no-cache-dir jupyterlab jupyterlab-deck numpy pandas numba jax pyarrow awkward pybind11
-
-# Download and build Python 3.13 (with --disable-gil)
-ENV PYTHON_VERSION=3.13.5
-
+# Dependencies
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         build-essential \
@@ -21,6 +16,9 @@ RUN apt-get update && \
         git && \
     rm -rf /var/lib/apt/lists/*
 
+# Download and build Python 3.13 (with --disable-gil)
+ENV PYTHON_VERSION=3.13.5
+
 RUN wget https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VERSION}.tar.xz && \
     tar -xf Python-${PYTHON_VERSION}.tar.xz && \
     cd Python-${PYTHON_VERSION} && \
@@ -28,6 +26,9 @@ RUN wget https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VER
     make -j"$(nproc)" && \
     make altinstall && \
     cd .. && rm -rf Python-${PYTHON_VERSION}*
+
+# Install Python 3.12 packages
+RUN pip install --no-cache-dir jupyterlab jupyterlab-deck numpy pandas numba pyarrow awkward pybind11
 
 # Install Python 3.13 packages
 RUN pip3.13 install --no-cache-dir numpy
@@ -43,4 +44,4 @@ EXPOSE 8888
 RUN jupyter labextension disable "@jupyterlab/apputils-extension:announcements"
 
 # Start Jupyter Lab
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser", "--notebook-dir=/notebooks", "/notebooks/presentation.ipynb"]
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser", "--notebook-dir=/notebooks", "--LabApp.default_url=/lab/tree/presentation.ipynb"]

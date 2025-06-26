@@ -27,10 +27,10 @@
      inkscape:zoom="0.72702664"
      inkscape:cx="570.81815"
      inkscape:cy="328.73623"
-     inkscape:window-width="1914"
-     inkscape:window-height="1157"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="2554"
+     inkscape:window-height="1365"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="g133064"
      inkscape:object-nodes="true"
@@ -179,7 +179,7 @@
        id="g133064"
        transform="translate(0,-1.5875)">
       <rect
-         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffff00;fill-opacity:0.88465285;fill-rule:evenodd;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffff00;fill-opacity:0.59955084;fill-rule:evenodd;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
          id="rect120780"
          width="50.683762"
          height="139.9214"
@@ -189,19 +189,14 @@
          xml:space="preserve"
          style="font-size:6.35px;line-height:1.5;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="-57.177448"
-         y="156.15099"
+         y="160.91348"
          id="text126070"
          transform="rotate(-90)"><tspan
            sodipodi:role="line"
-           id="tspan126068"
            style="stroke-width:0.264583"
            x="-57.177448"
-           y="156.15099">processors got 50% faster every year</tspan><tspan
-           sodipodi:role="line"
-           style="stroke-width:0.264583"
-           x="-57.177448"
-           y="165.67598"
-           id="tspan6326">(software got faster for free)</tspan></text>
+           y="160.91348"
+           id="tspan6326">processors got 50% faster every year</tspan></text>
     </g>
     <g
        id="g123045">
