@@ -15,3 +15,5 @@ addthem.c
 addthem.o
 libaddthem*.so
 million_integers.int32
+quadratic_formula_pybind11.cpp
+quadratic_formula_pybind11.so

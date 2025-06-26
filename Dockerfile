@@ -1,7 +1,7 @@
 FROM python:3.12-slim
 
 # Install Python 3.12 packages
-RUN pip install --no-cache-dir jupyterlab jupyterlab-deck numpy numba jax pyarrow awkward pybind11
+RUN pip install --no-cache-dir jupyterlab jupyterlab-deck numpy pandas numba jax pyarrow awkward pybind11
 
 # Download and build Python 3.13 (with --disable-gil)
 ENV PYTHON_VERSION=3.13.5
